@@ -1,5 +1,7 @@
 node_modules/
 autumn-nursery/out/*
 !autumn-nursery/out/autumn-nursery-web.mp4
+!chef-plating/out/chef-plating-animatic.mp4
 chef-plating/out/*
 !chef-plating/out/chef-plating-animatic.mp4
+!chef-plating/out/chef-plating-3d.mp4

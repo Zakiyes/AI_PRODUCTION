@@ -8,10 +8,18 @@
     "render": "remotion render src/index.ts ChefPlating out/chef-plating.mp4 --codec h264 --crf 18"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.1.2",
+    "@react-three/postprocessing": "^3.0.4",
+    "@remotion/bundler": "^4.0.535",
     "@remotion/cli": "4.0.535",
+    "@remotion/renderer": "^4.0.535",
+    "@remotion/three": "^4.0.535",
+    "@types/three": "^0.170.0",
+    "postprocessing": "^6.37.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "remotion": "4.0.535"
+    "remotion": "4.0.535",
+    "three": "^0.170.0"
   },
   "devDependencies": {
     "@types/react": "19.1.0",
