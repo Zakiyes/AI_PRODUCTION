@@ -65,7 +65,7 @@ const ShotView: React.FC<{ s: Shot }> = ({ s }) => {
 
 // Logo: written on in the white negative space above the dish in the hero shot.
 const Signature: React.FC<{ t: number }> = ({ t }) => {
-  const a = 26.3;
+  const a = 26.6;
   const write = interpolate(t, [a, a + 1.3], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
   if (write <= 0) return null;
   const w = 760;
@@ -94,14 +94,14 @@ export const Film: React.FC = () => {
   const fadeIn = interpolate(t, [0, 0.8], [1, 0], { extrapolateRight: 'clamp' });
   const toWhite = interpolate(t, [29.2, 30], [0, 0.85], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   // dissolve 7 -> 8
-  const dissolve = interpolate(t, [24.2, 24.8], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const dissolve = interpolate(t, [24.7, 25.3], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const grainShift = (frame * 137) % 400;
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
       <AbsoluteFill style={{ zIndex: 0 }}>
       {SHOTS.map((s) => (
         <Sequence key={s.id} from={Math.round(s.from * FPS)} durationInFrames={Math.round((s.to - s.from + (s.id === 7 ? 0.3 : 0)) * FPS)}>
-          <AbsoluteFill style={{ opacity: s.id === 7 ? (t > 24.2 ? dissolve : 1) : 1, zIndex: s.id === 7 ? 2 : 1 }}>
+          <AbsoluteFill style={{ opacity: s.id === 7 ? (t > 24.7 ? dissolve : 1) : 1, zIndex: s.id === 7 ? 2 : 1 }}>
             <ShotView s={s} />
           </AbsoluteFill>
         </Sequence>
