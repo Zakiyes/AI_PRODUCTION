@@ -1,0 +1,3 @@
+node_modules/
+autumn-nursery/out/*
+!autumn-nursery/out/autumn-nursery-web.mp4
