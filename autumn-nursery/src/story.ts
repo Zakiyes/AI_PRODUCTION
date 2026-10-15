@@ -94,7 +94,7 @@ export function exteriorCam(t: number) {
 }
 
 export const interiorOpacity = (t: number) => track(t, [[5.5, 0], [6.4, 1, sine], [43.0, 1], [43.7, 0, sine]]);
-export const paperFade = (t: number) => track(t, [[0, 1], [1.4, 0, sine], [44.1, 0], [45, 1, sine]]);
+export const paperFade = (t: number) => track(t, [[0, 1], [1.4, 0, sine], [43.6, 0], [44.4, 1, sine]]);
 
 // Wind: a steady stir plus the gust that carries the leaf in (C).
 export const breeze = (t: number) =>
