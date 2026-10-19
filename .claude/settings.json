@@ -1,0 +1,20 @@
+{
+  "enabledPlugins": {
+    "instagram-skills@instagram-skills": true,
+    "linkedin-skills@linkedin-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "instagram-skills": {
+      "source": {
+        "source": "github",
+        "repo": "sergebulaev/instagram-skills"
+      }
+    },
+    "linkedin-skills": {
+      "source": {
+        "source": "github",
+        "repo": "sergebulaev/linkedin-skills"
+      }
+    }
+  }
+}
